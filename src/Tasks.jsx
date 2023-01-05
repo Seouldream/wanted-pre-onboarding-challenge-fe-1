@@ -1,49 +1,25 @@
-import { useState } from 'react';
-import Task from './Task';
-import TaskModifyForm from './TaskModifyForm';
+import { Link, Outlet } from 'react-router-dom';
 
 export default function Tasks({
   tasks,
-  taskField,
-  handleClickSetTaskField,
-  handleClickDeleteTask,
-  handleChangeTaskField,
-  handleSubmitModify,
 }) {
-  const [isOpen, setIsOpen] = useState('');
-
-  const handleClickOpenModifyHandler = (id) => {
-    setIsOpen((element) => (element.isOpen !== id ? id : ''));
-
-    if (isOpen === id) {
-      setIsOpen('');
-    }
-  };
-
   return (
-    <ul>
-      {tasks.map((task) => (
-        isOpen !== task.id
-          ? (
-            <Task
+    <div>
+      <nav>
+        <ul>
+          {tasks.map((task) => (
+            <Link
+              to={`/tasks/${task.id}`}
               key={task.id}
-              task={task}
-              onClickSetTaskField={handleClickSetTaskField}
-              onClickOpenModifyHandler={handleClickOpenModifyHandler}
-              onClickDeleteTask={handleClickDeleteTask}
-            />
-          )
-          : (
-            <TaskModifyForm
-              key={task.id}
-              taskField={taskField}
-              task={task}
-              onChangeTaskField={handleChangeTaskField}
-              onSubmitModify={handleSubmitModify}
-              onClickOpenModifyHandler={handleClickOpenModifyHandler}
-            />
-          )
-      ))}
-    </ul>
+            >
+              <li>
+                {task.title}
+              </li>
+            </Link>
+          ))}
+        </ul>
+      </nav>
+      <Outlet />
+    </div>
   );
 }

@@ -10,13 +10,9 @@ export default function Task({
   };
 
   return (
-    <li>
-      {task.title}
-      <ul>
-        <li>
-          {task.content}
-        </li>
-      </ul>
+    <div>
+      <h1>{task.title}</h1>
+      <p>{task.content}</p>
       <button
         type="button"
         onClick={() => handleClickModifyButton(task.id)}
@@ -29,6 +25,6 @@ export default function Task({
       >
         삭제
       </button>
-    </li>
+    </div>
   );
 }

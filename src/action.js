@@ -38,3 +38,10 @@ export function addTask() {
     type: 'addTask',
   };
 }
+
+export function fetchTask(id) {
+  return {
+    type: 'fetchTask',
+    payload: { id },
+  };
+}

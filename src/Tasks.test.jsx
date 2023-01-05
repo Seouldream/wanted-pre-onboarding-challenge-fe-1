@@ -2,6 +2,7 @@ import {
   render, screen,
 } from '@testing-library/react';
 import { useDispatch } from 'react-redux';
+import { MemoryRouter } from 'react-router-dom';
 import tasks from '../fixtures/tasks';
 import Tasks from './Tasks';
 
@@ -17,14 +18,16 @@ test('Tasks', () => {
   useDispatch.mockImplementation(() => dispatch);
 
   render((
-    <Tasks
-      tasks={tasks}
-      taskField={taskField}
-      handleClickSetTaskField={handleClickSetTaskField}
-      handleClickDeleteTask={handleClickDeleteTask}
-      handleChangeTaskField={handleChangeTaskField}
-      handleSubmitModify={handleSubmitModify}
-    />
+    <MemoryRouter>
+      <Tasks
+        tasks={tasks}
+        taskField={taskField}
+        handleClickSetTaskField={handleClickSetTaskField}
+        handleClickDeleteTask={handleClickDeleteTask}
+        handleChangeTaskField={handleChangeTaskField}
+        handleSubmitModify={handleSubmitModify}
+      />
+    </MemoryRouter>
   ));
 
   screen.getByText('아무것도 안하기');
