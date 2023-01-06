@@ -11,9 +11,11 @@
 핵심 기능인 ToDoApp부터 우선 구현하며 만들었고 단위 테스트를 먼저 작성해가면서 구현하였습니다.
 
 ### 홈 화면 및 헤더 화면
+---
 ![image](https://user-images.githubusercontent.com/101691259/210916466-018a52e7-6da6-4637-b9a7-774ca1ec06d9.png)
 
 ### To Do 목록 페이지 화면
+---
 ![image](https://user-images.githubusercontent.com/101691259/210916585-867d5358-9996-4dc3-b1ea-a2935620b1ed.png)
 
 ### 상세 페이지 화면
