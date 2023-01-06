@@ -10,19 +10,19 @@
 </br>
 핵심 기능인 ToDoApp부터 우선 구현하며 만들었고 단위 테스트를 먼저 작성해가면서 구현하였습니다.
 
-### 홈 화면 및 
+### 홈 화면 및 헤더 화면
 ![image](https://user-images.githubusercontent.com/101691259/210916466-018a52e7-6da6-4637-b9a7-774ca1ec06d9.png)
 
-### To Do 목록 페이지
+### To Do 목록 페이지 화면
 ![image](https://user-images.githubusercontent.com/101691259/210916585-867d5358-9996-4dc3-b1ea-a2935620b1ed.png)
 
-### 상세 페이지
-![image](https://user-images.githubusercontent.com/101691259/210916662-b5603fd0-b8a5-4b22-b3a2-f249d0eace7a.png)
+### 상세 페이지 화면
+![image](https://user-images.githubusercontent.com/101691259/210917441-23198e94-e025-44dc-b73e-15f9a3ed30d0.png)
 
-### 로그인
+### 로그인 화면
 ![image](https://user-images.githubusercontent.com/101691259/210916737-291f4e0c-9b00-40ed-ab0c-1902b9eba433.png)
 
-### 회원가입
+### 회원가입 화면
 ![image](https://user-images.githubusercontent.com/101691259/210916762-12ab61f8-0c5e-4f39-8f5d-b31b81622a00.png)
 
 ### 테스트
