@@ -13,7 +13,7 @@
 ### 홈 화면 및 
 ![image](https://user-images.githubusercontent.com/101691259/210916466-018a52e7-6da6-4637-b9a7-774ca1ec06d9.png)
 
-###To Do 목록 페이지
+### To Do 목록 페이지
 ![image](https://user-images.githubusercontent.com/101691259/210916585-867d5358-9996-4dc3-b1ea-a2935620b1ed.png)
 
 ### 상세 페이지
