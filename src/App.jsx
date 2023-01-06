@@ -9,6 +9,8 @@ import { setTasks } from './action';
 import Home from './Home';
 import ToDo from './ToDoDetail';
 import ToDoList from './ToDoApp';
+import LoginPage from './LoginPage';
+import SignupPage from './SignPage';
 
 export default function App() {
   const dispatch = useDispatch();
@@ -33,6 +35,10 @@ export default function App() {
             <Link to="/login">
               Login
             </Link>
+            {' '}
+            <Link to="/signup">
+              signup
+            </Link>
           </ul>
         </nav>
         <Outlet />
@@ -42,6 +48,8 @@ export default function App() {
         <Route path="tasks" element={<ToDoList />}>
           <Route path=":taskId" element={<ToDo />} />
         </Route>
+        <Route path="login" element={<LoginPage />} />
+        <Route path="signup" element={<SignupPage />} />
       </Routes>
     </>
   );
