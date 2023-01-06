@@ -19,13 +19,17 @@
 ![image](https://user-images.githubusercontent.com/101691259/210916585-867d5358-9996-4dc3-b1ea-a2935620b1ed.png)
 
 ### 상세 페이지 화면
+---
 ![image](https://user-images.githubusercontent.com/101691259/210917441-23198e94-e025-44dc-b73e-15f9a3ed30d0.png)
 
 ### 로그인 화면
+---
 ![image](https://user-images.githubusercontent.com/101691259/210916737-291f4e0c-9b00-40ed-ab0c-1902b9eba433.png)
 
 ### 회원가입 화면
+---
 ![image](https://user-images.githubusercontent.com/101691259/210916762-12ab61f8-0c5e-4f39-8f5d-b31b81622a00.png)
 
-### 테스트
+### 단위 테스트
+---
 ![image](https://user-images.githubusercontent.com/101691259/210917113-0febe20f-50cc-472a-b411-c7d37752e816.png)
