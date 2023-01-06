@@ -38,3 +38,34 @@ export function addTask() {
     type: 'addTask',
   };
 }
+
+export function fetchTask(id) {
+  return {
+    type: 'fetchTask',
+    payload: { id },
+  };
+}
+
+export function login({ email, password }) {
+  return {
+    type: 'login',
+    payload: { email, password },
+  };
+}
+
+export function resetSignupStatus() {
+  return {
+    type: 'resetSignupStatus',
+  };
+}
+
+export function signup({
+  name, email, password, confirmPassword,
+}) {
+  return {
+    type: 'signup',
+    payload: {
+      name, email, password, confirmPassword,
+    },
+  };
+}

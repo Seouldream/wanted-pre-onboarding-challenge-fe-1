@@ -19,7 +19,7 @@ export default function TaskModifyForm({
   };
 
   return (
-    <li>
+    <div>
       <div>
         <label htmlFor="input-title">
           제목
@@ -31,8 +31,6 @@ export default function TaskModifyForm({
           value={taskField.title}
           onChange={handleChangeTaskField}
         />
-      </div>
-      <div>
         <label htmlFor="input-content">
           내용
         </label>
@@ -56,6 +54,6 @@ export default function TaskModifyForm({
       >
         취소
       </button>
-    </li>
+    </div>
   );
 }

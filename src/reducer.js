@@ -2,6 +2,7 @@
 const initialState = {
   newId: 100,
   taskField: { title: '', content: '' },
+  task: { id: -1, title: '', content: '' },
   tasks: [],
 };
 
@@ -21,6 +22,18 @@ export default function reducer(state = initialState, action) {
     return {
       ...state,
       taskField: { ...foundTask },
+    };
+  }
+
+  if (action.type === 'fetchTask') {
+    const foundTask = state.tasks.find((task) => (
+      task.id === action.payload.id
+    ));
+    console.log('foundTask', foundTask);
+    console.log('action.payload.id', action.payload.id);
+    return {
+      ...state,
+      task: { ...foundTask },
     };
   }
 
